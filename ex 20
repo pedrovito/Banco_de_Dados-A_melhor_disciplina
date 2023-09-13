@@ -1,0 +1,5 @@
+SELECT produto
+FROM vendas
+GROUP BY produto
+ORDER BY COUNT(*) DESC
+LIMIT 1;
