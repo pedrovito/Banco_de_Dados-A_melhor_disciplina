@@ -1,0 +1,4 @@
+SELECT autores.nome AS autor, SUM(20 * COUNT(livros.id)) AS receita_total
+FROM autores
+LEFT JOIN livros ON autores.id = livros.autor_id
+GROUP BY autores.nome;
