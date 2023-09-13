@@ -1,0 +1,3 @@
+SELECT alunos.nome AS aluno, COALESCE(matriculas.curso, 'Nenhum aluno matriculado') AS curso
+FROM matriculas
+RIGHT JOIN alunos ON matriculas.aluno_id = alunos.id;
